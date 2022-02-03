@@ -1,0 +1,22 @@
+.hero {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background-color: black;
+  text-align: center;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  h1 {
+    color: antiquewhite;
+  }
+}
