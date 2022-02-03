@@ -1,0 +1,33 @@
+.root {
+  background: linear-gradient(130deg, #ff7a18, #c76321 41.07%, #030e0f 76.05%);
+  color: white;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  svg {
+    fill: white;
+    margin-inline-end: 0.5rem;
+    display: inline-block;
+  }
+  span {
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    transform: rotate(-8deg) translate(-15px, -15px);
+  }
+  div {
+    display: flex;
+    align-items: center;
+    > * {
+      margin-inline: 0.5rem;
+    }
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
