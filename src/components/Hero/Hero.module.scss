@@ -8,13 +8,11 @@
 }
 
 .container {
-  display: block;
   width: 100%;
-  max-width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 40px;
-  padding-right: 40px;
 
   h1 {
     color: antiquewhite;

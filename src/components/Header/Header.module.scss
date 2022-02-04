@@ -1,8 +1,11 @@
+$small: 300px;
+$medium: 900px;
+
 .root {
   background: linear-gradient(130deg, #ff7a18, #c76321 41.07%, #030e0f 76.05%);
   color: white;
   padding: 1rem;
-  margin: 0 0 1rem 0;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,4 +33,12 @@
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
   }
+
+  @media screen and (max-width: $medium){
+    height: auto;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
 }
+
+

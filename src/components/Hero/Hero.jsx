@@ -5,7 +5,15 @@ export default function Hero(props) {
   return (
     <div className={styles.hero}>
       <div className={styles.container}>
-        <h1>{props.text}</h1>
+        {/* <img src='/nh-hero.png' /> */}
+        <img 
+          src='/nh-hero-resize2.png' 
+          style={
+            { maxWidth: '500px', 
+              padding: '20px' }
+          }
+          />
+        <h1 style={{padding: '50px'}}>{props.text}</h1>
       </div>
     </div>
   )
