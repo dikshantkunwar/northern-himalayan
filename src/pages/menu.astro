@@ -1,6 +1,50 @@
 ---
 // Component Imports
 import Header from '../components/Header'
+import MenuCard from '../components/MenuCard'
+
+const menuData = 
+[
+  {
+    cardHeader: "Breakfast",
+    menuItems: [
+      { 
+        itemName: "Sel Roti and Aloo",
+        itemPrice: "8.85",
+        description: "Tender beef short rib served on the bone on top of noodles in a chicken broth, finished with carrots, mangetout and red onions."
+      },
+      {
+        itemName: "Jerry Swari",
+        itemPrice: "8.50"
+        description: "Grilled teriyaki lamb with mushrooms, asparagus, kale and mangetout served on a bed of soba noodles in a pea dressing."
+      },
+      {
+        itemName: "Grilled duck donburi",
+        itemPrice: "8.85",
+        description: "Tender shredded duck leg in a spicy teriyaki sauce, served with carrots, mangetout, sweet potato and red onion on a bed of sticky Japanese rice. Finished with a crispy fried egg and cucumber."
+      },
+      {
+        itemName: "Grilled Tuna",
+        itemPrice: "8.85",
+        description: "Seared tuna steak on a bed of quinoa, kale, red peppers, red onion and edamame beans. served with a miso cucumber and sesame."
+      }
+    ]
+  },
+  {
+    cardHeader: "Dinner",
+    menuItems: [
+      { 
+        itemName: "Dal Bhat Set w/ Chicken",
+        itemPrice: "8.85",
+        description: "Tender beef short rib served on the bone on top of noodles in a chicken broth, finished with carrots, mangetout and red onions."
+      },
+      { 
+        itemName: "Dal Bhat Set Vegetarian",
+        itemPrice: "8.85",
+        description: "Tender beef short rib served on the bone on top of noodles in a chicken broth, finished with carrots, mangetout and red onions."
+      }
+  }
+]
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
@@ -27,7 +71,8 @@ import Header from '../components/Header'
 	<body>
 		<main>
         <Header />
-        <h1>This is the MENU page</h1>
+        <h1>Menu</h1>
+
 		</main>
 	</body>
 </html>
