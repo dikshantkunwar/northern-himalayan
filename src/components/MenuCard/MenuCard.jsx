@@ -11,7 +11,8 @@ export default function MenuCard(props) {
         itemName={item.itemName} 
         itemPrice={item.itemPrice} 
         itemDescription={item.description}
-      />)
+      />
+      )
     }
   })
   return (

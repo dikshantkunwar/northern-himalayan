@@ -15,17 +15,51 @@ import Hero from '../components/Hero'
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Source+Serif+Pro:wght@900&display=swap" rel="stylesheet">
 		<style>
+            @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
 			html,
 			body {
                 font-size: 24px;
 				font-family: 'Montserrat', sans-serif;
 				margin: 0;
-			}
+			},
+            .patterns {
+                height: 100vh;
+            }
+
+            svg text {
+                font-family: Lora;
+                letter-spacing: 10px;
+                stroke: #ffa5d8;
+                font-size: 80px;
+                font-weight: 700;
+                stroke-width: 3;
+
+                animation: textAnimate 5s infinite alternate;
+            }
+
+            @keyframes textAnimate {
+                0% {
+                    stroke-dasharray: 0 50%;
+                    stroke-dashoffset: 20%;
+                    fill:hsl(39, 100%, 50%)
+                }
+
+                100% {
+                    stroke-dasharray: 50% 0;
+                    stroke-dashoffset: -20%;
+                    fill:hsla(189, 68%, 75%)
+                }
+            }
 		</style>
 	</head>
 	<body>
 		<main>
             <Header />
+            <div class="patterns">
+                <svg width="100%" height="100%">
+                    <text x="50%" y="60%" text-anchor="middle">Coming Soon...</text>
+                </svg>
+            </div>
             <Hero text="North Bay's favorite Himalayan restaurant is reopening soon at a new location downtown!" />
 		</main>
 	</body>

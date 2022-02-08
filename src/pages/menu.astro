@@ -1,7 +1,7 @@
 ---
 // Component Imports
-import Header from '../components/Header'
-import MenuCard from '../components/MenuCard'
+import Header from '../components/Header';
+import MenuCard from '../components/MenuCard';
 
 const menuData = 
 [
@@ -15,7 +15,7 @@ const menuData =
       },
       {
         itemName: "Jerry Swari",
-        itemPrice: "8.50"
+        itemPrice: "8.50",
         description: "Grilled teriyaki lamb with mushrooms, asparagus, kale and mangetout served on a bed of soba noodles in a pea dressing."
       },
       {
@@ -43,10 +43,9 @@ const menuData =
         itemPrice: "8.85",
         description: "Tender beef short rib served on the bone on top of noodles in a chicken broth, finished with carrots, mangetout and red onions."
       }
+    ]
   }
 ]
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 
 <html lang="en">
@@ -63,16 +62,19 @@ const menuData =
 				font-family: 'Montserrat', sans-serif;;
 				margin: 0;
 			}
-			body {
-				/* padding: 2rem; */
-			}
 		</style>
 	</head>
 	<body>
 		<main>
         <Header />
         <h1>Menu</h1>
-
+        <div>
+          {menuData.map((item) => {
+              return (
+                <MenuCard />
+              )
+            })}
+        </div>
 		</main>
 	</body>
 </html>
