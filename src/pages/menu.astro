@@ -2,50 +2,16 @@
 // Component Imports
 import Header from '../components/Header';
 import MenuCard from '../components/MenuCard';
+import data from '../data.js';
 
-const menuData = 
-[
-  {
-    cardHeader: "Breakfast",
-    menuItems: [
-      { 
-        itemName: "Sel Roti and Aloo",
-        itemPrice: "8.85",
-        description: "Tender beef short rib served on the bone on top of noodles in a chicken broth, finished with carrots, mangetout and red onions."
-      },
-      {
-        itemName: "Jerry Swari",
-        itemPrice: "8.50",
-        description: "Grilled teriyaki lamb with mushrooms, asparagus, kale and mangetout served on a bed of soba noodles in a pea dressing."
-      },
-      {
-        itemName: "Grilled duck donburi",
-        itemPrice: "8.85",
-        description: "Tender shredded duck leg in a spicy teriyaki sauce, served with carrots, mangetout, sweet potato and red onion on a bed of sticky Japanese rice. Finished with a crispy fried egg and cucumber."
-      },
-      {
-        itemName: "Grilled Tuna",
-        itemPrice: "8.85",
-        description: "Seared tuna steak on a bed of quinoa, kale, red peppers, red onion and edamame beans. served with a miso cucumber and sesame."
-      }
-    ]
-  },
-  {
-    cardHeader: "Dinner",
-    menuItems: [
-      { 
-        itemName: "Dal Bhat Set w/ Chicken",
-        itemPrice: "8.85",
-        description: "Tender beef short rib served on the bone on top of noodles in a chicken broth, finished with carrots, mangetout and red onions."
-      },
-      { 
-        itemName: "Dal Bhat Set Vegetarian",
-        itemPrice: "8.85",
-        description: "Tender beef short rib served on the bone on top of noodles in a chicken broth, finished with carrots, mangetout and red onions."
-      }
-    ]
-  }
-]
+const 
+  appetizers = data['appetizers'],
+  mains = data['mains'],
+  dessert = data['dessert'];
+
+console.log('mains: ', mains);
+console.log('apps: ', appetizers);
+console.log('dess: ', dessert);
 ---
 
 <html lang="en">
@@ -57,9 +23,11 @@ const menuData =
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Source+Serif+Pro:wght@900&display=swap" rel="stylesheet">
 		<style>
+			@import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
 			html,
 			body {
-				font-family: 'Montserrat', sans-serif;;
+        font-size: 24px;
+				font-family: 'Montserrat', sans-serif;
 				margin: 0;
 			}
 		</style>
@@ -69,11 +37,8 @@ const menuData =
         <Header />
         <h1>Menu</h1>
         <div>
-          {menuData.map((item) => {
-              return (
-                <MenuCard />
-              )
-            })}
+          {
+          }
         </div>
 		</main>
 	</body>

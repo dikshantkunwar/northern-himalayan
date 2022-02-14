@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className={styles.root}>
       <div>
-        <h1><img src='/Logo2_2022.png' style={{ maxHeight: '220px', maxWidth: '220px' }} /></h1>
+        <img src='/Logo2_crop_2022.png' style={{ maxHeight: '140px', maxWidth: '180px' }} />
       </div>
 
       <div>
