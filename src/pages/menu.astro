@@ -26,13 +26,23 @@ const
 				font-family: 'Montserrat', sans-serif;
 				margin: 0;
 			}
+      .menuHead{
+        text-align: center;
+      }
+      .menuBoard{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+      }
 		</style>
 	</head>
 	<body>
 		<main>
         <Header />
-        <h1>Menu</h1>
-        <div>
+        <h1 class="menuHead">Menu</h1>
+        <div class="menuBoard">
           <MenuCard 
             cardHeader="Appetizers"
             menuItems = {appetizers}
@@ -41,10 +51,10 @@ const
             cardHeader="Mains"
             menuItems = {mains}
             />
-            <MenuCard 
+          <MenuCard 
             cardHeader="Dessert"
             menuItems = {dessert}
-            />
+          />
         </div>
 		</main>
 	</body>
