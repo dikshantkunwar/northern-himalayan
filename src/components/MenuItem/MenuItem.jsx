@@ -1,7 +1,6 @@
-import React from 'react';
 import styles from './MenuItem.module.scss';
 
-export default function MenuItem() {
+export default function MenuItem(props) {
   return (
     <div className={styles.menuItem}>
       <div className={styles.menuTop}>

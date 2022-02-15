@@ -8,10 +8,6 @@ const
   appetizers = data['appetizers'],
   mains = data['mains'],
   dessert = data['dessert'];
-
-console.log('mains: ', mains);
-console.log('apps: ', appetizers);
-console.log('dess: ', dessert);
 ---
 
 <html lang="en">
@@ -37,8 +33,18 @@ console.log('dess: ', dessert);
         <Header />
         <h1>Menu</h1>
         <div>
-          {
-          }
+          <MenuCard 
+            cardHeader="Appetizers"
+            menuItems = {appetizers}
+            />
+          <MenuCard 
+            cardHeader="Mains"
+            menuItems = {mains}
+            />
+            <MenuCard 
+            cardHeader="Dessert"
+            menuItems = {dessert}
+            />
         </div>
 		</main>
 	</body>
