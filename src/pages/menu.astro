@@ -29,6 +29,15 @@ const
       .menuHead{
         text-align: center;
       }
+      .menuContainer {
+        display: block;
+        /* width: 100%; */
+        /* max-width: 1200px; */
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 40px;
+        padding-left: 40px;
+      }
       .menuBoard{
         display: flex;
         justify-content: space-around;
@@ -41,20 +50,22 @@ const
 	<body>
 		<main>
         <Header />
-        <h1 class="menuHead">Menu</h1>
-        <div class="menuBoard">
-          <MenuCard 
-            cardHeader="Appetizers"
-            menuItems = {appetizers}
+        <div class="menuContainer">
+          <h1 class="menuHead">Menu</h1>
+          <div class="menuBoard">
+            <MenuCard 
+              cardHeader="Appetizers"
+              menuItems = {appetizers}
+              />
+            <MenuCard 
+              cardHeader="Mains"
+              menuItems = {mains}
+              />
+            <MenuCard 
+              cardHeader="Dessert"
+              menuItems = {dessert}
             />
-          <MenuCard 
-            cardHeader="Mains"
-            menuItems = {mains}
-            />
-          <MenuCard 
-            cardHeader="Dessert"
-            menuItems = {dessert}
-          />
+          </div>
         </div>
 		</main>
 	</body>

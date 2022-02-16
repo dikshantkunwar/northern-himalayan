@@ -1,6 +1,12 @@
 .menuCard {
   width: 49%;
   padding: 2em 2em 1em;
-  border: 5px solid #000;
+  outline: 5px solid #000;
+  border: 5px solid #e65828;
   text-align: left;
+}
+
+.cardHeader {
+  text-align: center;
+  font-size: 1.5em;
 }

@@ -15,7 +15,7 @@ export default function MenuCard(props) {
 
   return (
     <div className={styles.menuCard}>
-      <h3>{props.cardHeader}</h3>
+      <h3 className={styles.cardHeader}>{props.cardHeader}</h3>
       {menuItems}
     </div>
   )
